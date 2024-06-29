@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:cinemaTest1:electron": "npx cypress run --record --key 6ba1a127-8ddd-4e25-8726-f6129627d5f9 --spec \"cypress/e2e/cinemaTest1.cy.js\" --group cinemaTest1:electron --browser electron",
+    "test:cinemaTest2:msedge": "npx cypress run --record --key 6ba1a127-8ddd-4e25-8726-f6129627d5f9 --spec \"cypress/e2e/cinemaTest2.cy.js\" --group cinemaTest2:edge --browser edge",
+    "test:parallel:all":"npm run test:cinemaTest1:electron & npm run test:cinemaTest2:edge"
   },
   "keywords": [],
   "author": "",
