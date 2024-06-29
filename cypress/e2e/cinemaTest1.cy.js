@@ -9,6 +9,7 @@ describe('Тесты сайта кинотеатра', () => {
     cy.get('.page-nav__day').should('have.length', 7)
     
   })
+  
 
   it('Тестирование даты сеанса, выбора фильма и бронирования мест', () => {
     cy.get('.page-nav__day:nth-of-type(6)').click()
